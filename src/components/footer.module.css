@@ -1,0 +1,27 @@
+footer {
+  padding: 50px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+}
+.media {
+  display: inline;
+  margin: 30px 10px;
+}
+.media:hover {
+  text-decoration: line-through;
+}
+.copyright {
+  margin-top: 17px;
+  margin-bottom: 40px;
+  color: #a3a3a3cb;
+}
+@media (min-width: 1024px) {
+  footer {
+    padding: 50px 50px 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
