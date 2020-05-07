@@ -8,7 +8,7 @@ import classes from "./layout.module.css"
 const layout = ({ children }) => {
   return (
     <div className={classes.container}>
-      <Header />
+      <Header className={classes.shadow} />
       <main className={classes.content}>{children}</main>
       <Footer />
     </div>

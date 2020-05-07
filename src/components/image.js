@@ -1,32 +1,42 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
-/*
- * This component is built using `gatsby-image` to automatically serve optimized
- * images with lazy loading and reduced file sizes. The image is loaded using a
- * `useStaticQuery`, which allows us to load the image from directly within this
- * component, rather than having to pass the image data down from pages.
- *
- * For more information, see the docs:
- * - `gatsby-image`: https://gatsby.dev/gatsby-image
- * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
- */
+import { motion } from "framer-motion"
 
-const Image = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+import classes from "./image.module.css"
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }
+
+const thumbnailVariants = {
+  initial: { scale: 0.9, opacity: 0 },
+  enter: { scale: 1, opacity: 1, transition },
+  exit: {
+    scale: 0.5,
+    opacity: 0,
+    transition: { duration: 1.5, ...transition },
+  },
 }
 
+const frameVariants = {
+  hover: { scale: 0.95 },
+}
+
+const imageVariants = {
+  hover: { scale: 1.2 },
+}
+
+const Image = ({ children }) => (
+  <motion.div className={classes.thumbnail} variants={thumbnailVariants}>
+    <motion.div
+      className={classes.frame}
+      whileHover="hover"
+      variants={frameVariants}
+      transition={transition}
+    >
+      {/* <Link to={`/image/${i}`}> */}
+      <motion.div variants={imageVariants} transition={transition}>
+        {children}
+      </motion.div>
+    </motion.div>
+  </motion.div>
+)
 export default Image

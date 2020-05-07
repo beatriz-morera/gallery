@@ -12,10 +12,12 @@ footer {
 .media:hover {
   text-decoration: line-through;
 }
+.media a {
+  text-decoration: none;
+}
 .copyright {
   margin-top: 17px;
   margin-bottom: 40px;
-  color: #a3a3a3cb;
 }
 @media (min-width: 1024px) {
   footer {
