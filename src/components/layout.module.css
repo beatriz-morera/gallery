@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
   color: #442c2e;
 }
 
 .container {
+  background: #f4f0f2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,4 +18,9 @@
 .content {
   flex: 1;
   text-align: center;
+}
+@media (min-width: 1024px) {
+  .container {
+    margin-left: 130px;
+  }
 }

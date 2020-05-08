@@ -21,7 +21,7 @@ const frameVariants = {
 }
 
 const imageVariants = {
-  hover: { scale: 1.2 },
+  hover: { scale: 0.95 },
 }
 
 const Image = ({ children }) => (

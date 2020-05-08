@@ -9,6 +9,7 @@ const footer = () => {
         <p className={classes.media}>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.facebook.com/thehummingbirdartgallery/"
           >
             Facebook
@@ -17,6 +18,7 @@ const footer = () => {
         <p className={classes.media}>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.instagram.com/the_hummingbird_artgallery/"
           >
             Instagram
@@ -25,6 +27,7 @@ const footer = () => {
         <p className={classes.media}>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.pinterest.es/hummingbirdgallery/"
           >
             Pinterest

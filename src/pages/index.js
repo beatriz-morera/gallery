@@ -13,6 +13,7 @@ const IndexPage = () => {
     <ParallaxProvider>
       <SEO title="Home" />
       <Layout>
+        <div className={classes.header} />
         <Gallery />
       </Layout>
     </ParallaxProvider>

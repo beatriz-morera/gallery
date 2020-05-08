@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import { Parallax } from "react-scroll-parallax"
 
 import Image from "../components/image"
-
+import splash from "../images/TitleSplash.png"
 import classes from "./gallery.module.css"
 
 const Gallery = () => {
@@ -110,55 +110,6 @@ const Gallery = () => {
           }
         }
       }
-      image15: file(relativePath: { eq: "15.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      image16: file(relativePath: { eq: "16.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      image17: file(relativePath: { eq: "17.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      image18: file(relativePath: { eq: "18.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      image19: file(relativePath: { eq: "19.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      image20: file(relativePath: { eq: "20.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      image21: file(relativePath: { eq: "21.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1500) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `)
   return (
@@ -168,6 +119,12 @@ const Gallery = () => {
       animate="enter"
       variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
     >
+      <div className={classes.title}>
+        <img src={splash} alt="splash" />
+        <h2>Discover</h2>
+        <br />
+        <h2>our designs</h2>
+      </div>
       <Image>
         <Parallax y={[-20, 20]}>
           <Img fluid={data.image1.childImageSharp.fluid} />
@@ -236,41 +193,6 @@ const Gallery = () => {
       <Image>
         <Parallax y={[-20, 20]}>
           <Img fluid={data.image14.childImageSharp.fluid} />
-        </Parallax>
-      </Image>
-      <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image15.childImageSharp.fluid} />
-        </Parallax>
-      </Image>
-      <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image16.childImageSharp.fluid} />
-        </Parallax>
-      </Image>
-      <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image17.childImageSharp.fluid} />
-        </Parallax>
-      </Image>
-      <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image18.childImageSharp.fluid} />
-        </Parallax>
-      </Image>
-      <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image19.childImageSharp.fluid} />
-        </Parallax>
-      </Image>
-      <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image20.childImageSharp.fluid} />
-        </Parallax>
-      </Image>
-      <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image21.childImageSharp.fluid} />
         </Parallax>
       </Image>
     </motion.main>

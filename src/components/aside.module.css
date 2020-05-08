@@ -1,0 +1,82 @@
+.aside {
+  display: none;
+  width: 130px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 2;
+}
+.logo {
+  height: 130px;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 20px;
+  line-height: 20px;
+  border-bottom: 0.5px solid #fedbd0;
+}
+.logo img {
+  width: 70px;
+  padding: 5px 0;
+}
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: row-reverse;
+  transform: rotate(-90deg);
+}
+
+.aside,
+.menu,
+.logo {
+  transition: 0.3s ease-in-out;
+}
+.aside li {
+  margin-right: 50px;
+  cursor: pointer;
+  color: #442c2e8e;
+  display: inline;
+  padding-bottom: 10px;
+  position: relative;
+}
+.aside li:hover {
+  color: #442c2e;
+}
+
+.aside li:after {
+  border-radius: 1em;
+  border-top: 0.1em solid;
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 0.14em;
+  left: 0;
+  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
+}
+
+.aside li:hover:after {
+  right: 0;
+}
+.shops {
+  text-align: center;
+  padding: 20px;
+}
+
+.shops img {
+  padding-top: 20px;
+}
+.shops img:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 1024px) {
+  .aside {
+    display: flex;
+  }
+}
