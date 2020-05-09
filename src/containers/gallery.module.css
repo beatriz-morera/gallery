@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 
 .main {
   display: grid;
@@ -22,7 +22,7 @@
   font-size: unset;
   margin-right: -15%;
   position: absolute;
-  font-family: "Yeseva One", cursive;
+  font-family: 'Yeseva One', cursive;
 }
 .title img {
   position: absolute;
@@ -32,7 +32,7 @@
 }
 @media (min-width: 500px) {
   .main {
-    padding: 50px 100px;
+    padding: 70px 100px 0;
     grid-gap: 50px;
   }
   .title {
@@ -44,7 +44,7 @@
   .main {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 20px;
-    padding: 80px 20px 20px 20px;
+    padding: 100px 20px 20px 20px;
   }
   .title {
     line-height: 90px;

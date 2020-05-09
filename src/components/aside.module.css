@@ -28,28 +28,24 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 20px;
   flex-direction: row-reverse;
   transform: rotate(-90deg);
 }
 
-.aside,
-.menu,
-.logo {
-  transition: 0.3s ease-in-out;
-}
-.aside li {
-  margin-right: 50px;
+.menu li {
+  margin-left: 40px;
   cursor: pointer;
   color: #442c2e8e;
   display: inline;
   padding-bottom: 10px;
   position: relative;
 }
-.aside li:hover {
+.menu li:hover {
   color: #442c2e;
 }
 
-.aside li:after {
+.menu li:after {
   border-radius: 1em;
   border-top: 0.1em solid;
   content: "";
@@ -60,7 +56,7 @@
   transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
 }
 
-.aside li:hover:after {
+.menu li:hover:after {
   right: 0;
 }
 .shops {
@@ -69,6 +65,7 @@
 }
 
 .shops img {
+  width: 50px;
   padding-top: 20px;
 }
 .shops img:hover {

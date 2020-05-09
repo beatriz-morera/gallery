@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+.item {
+  margin: 30px;
+  display: flex;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.textPlaceholder {
+  font-size: 40px;
+  color: #442c2e;
+  font-family: 'Yeseva One', cursive;
+}

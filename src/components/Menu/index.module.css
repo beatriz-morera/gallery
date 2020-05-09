@@ -1,0 +1,26 @@
+.background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background: #fedbd0;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+@media (min-width: 1024px) {
+  .background {
+    display: none;
+  }
+  .nav {
+    display: none;
+  }
+}
