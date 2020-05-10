@@ -1,9 +1,10 @@
-import React from "react"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import logo from "../images/logo.png"
-import etsy from "../images/etsy-icon.png"
-import society6 from "../images/society6-icon.png"
-import classes from "./aside.module.css"
+import logo from '../images/logo.png'
+import etsy from '../images/etsy-icon.png'
+import society6 from '../images/society6-icon.png'
+import classes from './aside.module.css'
 
 const Aside = () => {
   return (
@@ -14,9 +15,21 @@ const Aside = () => {
       </div>
       <nav>
         <ul className={classes.menu}>
-          <li>ABOUT</li>
-          <li>GALLERY</li>
-          <li>CONTACT</li>
+          <li>
+            <Link to="/about" style={{ textDecoration: 'none' }}>
+              ABOUT
+            </Link>
+          </li>
+          <li>
+            <Link to="/" style={{ textDecoration: 'none' }}>
+              GALLERY
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" style={{ textDecoration: 'none' }}>
+              CONTACT
+            </Link>
+          </li>
         </ul>
       </nav>
       <div className={classes.shops}>

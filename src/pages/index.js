@@ -5,6 +5,7 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Menu from '../components/Menu'
+import Header from '../components/header'
 import Gallery from '../containers/gallery'
 
 import classes from './index.module.css'
@@ -12,11 +13,16 @@ import classes from './index.module.css'
 const IndexPage = () => {
   return (
     <ParallaxProvider>
-      <SEO title="Home" />
-      <Menu links={['About', 'Gallery', 'Contact']} />
+      <SEO title="Gallery" />
+      <Menu
+        links={[
+          ['About', 'about'],
+          ['Gallery', ''],
+          ['Contact', 'contact'],
+        ]}
+      />
       <Layout>
-        <div className={classes.header} />
-
+        <Header />
         <Gallery />
       </Layout>
     </ParallaxProvider>
