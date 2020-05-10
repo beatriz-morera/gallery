@@ -8,6 +8,7 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Menu from '../components/Menu'
+import splash from '../images/AboutSplash.png'
 
 import classes from './about.module.css'
 
@@ -41,6 +42,7 @@ const About = () => {
           </div>
           <div className={classes.info}>
             <h1>About us</h1>
+            <img src={splash} alt="splash" />
             <h4>
               The Hummingbird Art gallery was created by Beatriz Morera López, a
               cuban visual artist based on Barcelona, Spain.
@@ -53,7 +55,6 @@ const About = () => {
               nectar to the fullest. Hummingbirds are bringers of joy, luck,
               hope, comfort, love, appreciation, enjoyment, independence,
               freedom, and optimism.
-              <br />
               <br />
               The Hummingbird Art Gallery is all about my love for hummers, my
               vision of them and their energy illustrated using watercolors,

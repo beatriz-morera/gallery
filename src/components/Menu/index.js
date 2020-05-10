@@ -8,7 +8,7 @@ import classes from './index.module.css'
 
 const sidebar = {
   open: {
-    clipPath: `circle(150% at 100% 0px)`,
+    clipPath: `square(100% at 100% 0px)`,
     width: '100%',
     height: '100%',
     transition: {
@@ -18,7 +18,7 @@ const sidebar = {
     },
   },
   closed: {
-    clipPath: `circle(80px at 100% 0px)`,
+    clipPath: `square(80px at 100% 0px)`,
     width: '80px',
     height: '80px',
     transition: {

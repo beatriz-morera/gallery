@@ -18,7 +18,7 @@ export default ({ toggle }) => (
     <svg width="25" height="25" viewBox="0 0 25 25">
       <Path
         variants={{
-          closed: { d: 'M 2 2.5 L 12 2.5' },
+          closed: { d: 'M 2 2.5 L 25 2.5' },
           open: { d: 'M 3 16.5 L 17 2.5' },
         }}
       />
@@ -32,7 +32,7 @@ export default ({ toggle }) => (
       />
       <Path
         variants={{
-          closed: { d: 'M 10 16.346 L 25 16.346' },
+          closed: { d: 'M 2 16.346 L 25 16.346' },
           open: { d: 'M 3 2.5 L 17 16.346' },
         }}
       />
