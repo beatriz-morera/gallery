@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import logo from '../images/logo.png'
-import etsy from '../images/etsy-icon.png'
-import society6 from '../images/society6-icon.png'
+import logo from '../../images/logo.png'
+import etsy from '../../images/etsy-icon.png'
+import society6 from '../../images/society6-icon.png'
 import classes from './aside.module.css'
 
 const Aside = () => {

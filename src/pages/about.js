@@ -7,7 +7,7 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Menu from '../components/Menu'
+import Menu from '../components/menu'
 import splash from '../images/AboutSplash.png'
 
 import classes from './about.module.css'

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Aside from './aside'
-import Footer from './footer'
+import Aside from '../aside'
+import Footer from '../footer'
 
 import classes from './layout.module.css'
 

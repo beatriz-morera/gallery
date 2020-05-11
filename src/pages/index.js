@@ -4,7 +4,8 @@ import { ParallaxProvider } from 'react-scroll-parallax'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Menu from '../components/Menu'
+import Menu from '../components/menu'
+import ContactForm from '../components/form'
 import Header from '../components/header'
 import Gallery from '../containers/gallery'
 
