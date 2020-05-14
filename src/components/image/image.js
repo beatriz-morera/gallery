@@ -3,8 +3,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { Parallax } from 'react-scroll-parallax'
 
-import hoverSplash from '../../images/HoverSplash.png'
-
 import classes from './image.module.css'
 
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }

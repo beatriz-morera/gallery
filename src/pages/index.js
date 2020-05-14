@@ -8,8 +8,6 @@ import Menu from '../components/menu'
 import Header from '../components/header'
 import Gallery from '../containers/gallery'
 
-import classes from './index.module.css'
-
 const IndexPage = () => {
   return (
     <ParallaxProvider>

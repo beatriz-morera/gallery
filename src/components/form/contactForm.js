@@ -10,11 +10,7 @@ const ContactForm = () => {
   }
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      netlify="true"
-      className={classes.form}
-    >
+    <form onSubmit={handleSubmit(onSubmit)} netlify className={classes.form}>
       <div className={classes.inputContainer}>
         <input
           className={classes.inputName}
