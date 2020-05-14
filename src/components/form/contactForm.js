@@ -10,7 +10,11 @@ const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} netlify className={classes.form}>
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      netlify="true"
+      className={classes.form}
+    >
       <div className={classes.inputContainer}>
         <input
           className={classes.inputName}
@@ -57,7 +61,9 @@ const ContactForm = () => {
       />
       {errors.message && errors.message.message}
 
-      <button type="submit">Submit</button>
+      <button type="submit" disabled={!!errors}>
+        Submit
+      </button>
     </form>
   )
 }

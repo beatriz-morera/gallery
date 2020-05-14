@@ -1,8 +1,11 @@
-import React from "react"
+import React from 'react'
 
-import { motion } from "framer-motion"
+import { motion } from 'framer-motion'
+import { Parallax } from 'react-scroll-parallax'
 
-import classes from "./image.module.css"
+import hoverSplash from '../../images/HoverSplash.png'
+
+import classes from './image.module.css'
 
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }
 
@@ -17,11 +20,11 @@ const thumbnailVariants = {
 }
 
 const frameVariants = {
-  hover: { scale: 0.95 },
+  hover: { scale: 0.97 },
 }
 
 const imageVariants = {
-  hover: { scale: 0.95 },
+  hover: { scale: 0.97 },
 }
 
 const Image = ({ children }) => (
@@ -33,8 +36,9 @@ const Image = ({ children }) => (
       transition={transition}
     >
       {/* <Link to={`/image/${i}`}> */}
+
       <motion.div variants={imageVariants} transition={transition}>
-        {children}
+        <Parallax y={[-20, 20]}>{children}</Parallax>
       </motion.div>
     </motion.div>
   </motion.div>

@@ -1,41 +1,41 @@
-import React from "react"
+import React from 'react'
 
-import classes from "./footer.module.css"
+import { motion } from 'framer-motion'
+import { textVariants } from '../../services/animations'
+
+import classes from './footer.module.css'
 
 const footer = () => {
   return (
-    <footer>
+    <motion.footer variants={textVariants}>
       <div className={classes.social}>
-        <p className={classes.media}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.facebook.com/thehummingbirdartgallery/"
-          >
-            Facebook
-          </a>
-        </p>
-        <p className={classes.media}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.instagram.com/the_hummingbird_artgallery/"
-          >
-            Instagram
-          </a>
-        </p>
-        <p className={classes.media}>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.pinterest.es/hummingbirdgallery/"
-          >
-            Pinterest
-          </a>
-        </p>
+        <a
+          className={classes.media}
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.facebook.com/thehummingbirdartgallery/"
+        >
+          Facebook
+        </a>
+        <a
+          className={classes.media}
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.instagram.com/the_hummingbird_artgallery/"
+        >
+          Instagram
+        </a>
+        <a
+          className={classes.media}
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.pinterest.es/hummingbirdgallery/"
+        >
+          Pinterest
+        </a>
       </div>
       <p className={classes.copyright}>The Hummingbird Art Gallery©2020</p>
-    </footer>
+    </motion.footer>
   )
 }
 

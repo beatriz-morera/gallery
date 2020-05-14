@@ -1,5 +1,8 @@
 import React from 'react'
 
+import { motion } from 'framer-motion'
+import { imageVariants, textVariants } from '../services/animations'
+
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Menu from '../components/menu'
@@ -21,11 +24,13 @@ const Contact = () => {
       />
       <Layout contactPage>
         <main className={classes.main}>
-          <div className={classes.titleWrap}>
-            <img src={splash} alt="splash" />
-            <h1>Contact</h1>
-          </div>
-          <ContactForm />
+          <motion.div variants={imageVariants}>
+            <div className={classes.titleWrap}>
+              <img src={splash} alt="splash" />
+              <motion.h1 variants={textVariants}>Contact</motion.h1>
+            </div>
+            <ContactForm />
+          </motion.div>
         </main>
       </Layout>
     </>

@@ -30,6 +30,7 @@
   width: 160px;
   left: 25%;
 }
+
 @media (min-width: 500px) {
   .main {
     padding: 70px 100px 0;

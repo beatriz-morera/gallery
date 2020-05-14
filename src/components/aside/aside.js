@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import { motion } from 'framer-motion'
+
 import logo from '../../images/logo.png'
 import etsy from '../../images/etsy-icon.png'
 import society6 from '../../images/society6-icon.png'
@@ -38,14 +40,22 @@ const Aside = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={etsy} alt="etsy shop link" />
+          <motion.img
+            src={etsy}
+            alt="etsy shop link"
+            whileHover={{ scale: 0.8 }}
+          />
         </a>
         <a
           href="https://society6.com/thehummingbirdartgallery"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={society6} alt="society6 shop link" />
+          <motion.img
+            src={society6}
+            alt="society6 shop link"
+            whileHover={{ scale: 0.8 }}
+          />
         </a>
       </div>
     </aside>

@@ -1,13 +1,13 @@
-import React from "react"
+import React from 'react'
 
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import { motion } from "framer-motion"
-import { Parallax } from "react-scroll-parallax"
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import { motion } from 'framer-motion'
 
-import Image from "../components/image"
-import splash from "../images/TitleSplash.png"
-import classes from "./gallery.module.css"
+import Image from '../components/image'
+import splash from '../images/TitleSplash.png'
+
+import classes from './gallery.module.css'
 
 const Gallery = () => {
   const data = useStaticQuery(graphql`
@@ -126,74 +126,46 @@ const Gallery = () => {
         <h2>our designs</h2>
       </div>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image1.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image1.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image2.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image2.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image3.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image3.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image4.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image4.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image5.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image5.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image6.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image6.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image7.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image7.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image8.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image8.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image9.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image9.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image10.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image10.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image11.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image11.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image12.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image12.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image13.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image13.childImageSharp.fluid} />
       </Image>
       <Image>
-        <Parallax y={[-20, 20]}>
-          <Img fluid={data.image14.childImageSharp.fluid} />
-        </Parallax>
+        <Img fluid={data.image14.childImageSharp.fluid} />
       </Image>
     </motion.main>
   )
