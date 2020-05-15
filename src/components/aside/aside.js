@@ -11,24 +11,38 @@ import classes from './aside.module.css'
 const Aside = () => {
   return (
     <aside className={classes.aside}>
-      <div className={classes.logo}>
-        <img src={logo} alt="gallery logo" />
-        <p>ART GALLERY</p>
-      </div>
+      <Link to="/" style={{ textDecoration: 'none' }}>
+        <div className={classes.logo}>
+          <img src={logo} alt="gallery logo" />
+          <p>ART GALLERY</p>
+        </div>
+      </Link>
       <nav>
         <ul className={classes.menu}>
           <li>
-            <Link to="/about" style={{ textDecoration: 'none' }}>
+            <Link
+              to="/about"
+              style={{ textDecoration: 'none' }}
+              activeClassName={classes.active}
+            >
               ABOUT
             </Link>
           </li>
           <li>
-            <Link to="/" style={{ textDecoration: 'none' }}>
+            <Link
+              to="/"
+              style={{ textDecoration: 'none' }}
+              activeClassName={classes.active}
+            >
               GALLERY
             </Link>
           </li>
           <li>
-            <Link to="/contact" style={{ textDecoration: 'none' }}>
+            <Link
+              to="/contact"
+              style={{ textDecoration: 'none' }}
+              activeClassName={classes.active}
+            >
               CONTACT
             </Link>
           </li>

@@ -18,9 +18,9 @@ const sidebar = {
     },
   },
   closed: {
-    clipPath: `square(80px at 100% 0px)`,
-    width: '80px',
-    height: '80px',
+    clipPath: `square(70px at 100% 0px)`,
+    width: '70px',
+    height: '70px',
     transition: {
       delay: 0.2,
       type: 'spring',

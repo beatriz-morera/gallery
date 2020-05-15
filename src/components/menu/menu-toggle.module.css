@@ -6,10 +6,10 @@
   -ms-user-select: none;
   cursor: pointer;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
+  top: 3px;
+  right: 2px;
+  width: 70px;
+  height: 70px;
   background: transparent;
   z-index: 5;
 }

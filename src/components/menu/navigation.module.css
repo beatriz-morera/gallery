@@ -16,8 +16,6 @@
   width: 70px;
 }
 .list {
-  flex: 1;
-  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;

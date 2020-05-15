@@ -23,10 +23,16 @@ const variants = {
 export default ({ links = [], close }) => {
   return (
     <>
-      <motion.div variants={variants} className={classes.logo}>
-        <img src={logo} alt="gallery logo" />
-        <p>ART GALLERY</p>
-      </motion.div>
+      <Link to="/" style={{ textDecoration: 'none' }}>
+        <motion.div
+          variants={variants}
+          className={classes.logo}
+          onClick={close}
+        >
+          <img src={logo} alt="gallery logo" />
+          <p>ART GALLERY</p>
+        </motion.div>
+      </Link>
 
       <motion.div variants={variants} className={classes.container}>
         <motion.ul className={classes.list} variants={variants}>

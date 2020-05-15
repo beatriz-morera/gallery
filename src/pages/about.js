@@ -44,15 +44,15 @@ const About = () => {
           <motion.div className={classes.image} variants={imageVariants}>
             <Img fluid={data.aboutImage.childImageSharp.fluid} />
           </motion.div>
-          <motion.div className={classes.info} variants={textVariants}>
+          <div className={classes.info}>
             <article>
-              <h1>About us</h1>
-              <motion.img src={splash} alt="splash" variants={imageVariants} />
-              <h4>
+              <motion.h1 variants={textVariants}>About us</motion.h1>
+              <motion.img src={splash} alt="splash" variants={textVariants} />
+              <motion.h4 variants={textVariants}>
                 The Hummingbird Art gallery was created by Beatriz Morera López,
                 a Cuban visual artist based on Barcelona, Spain.
-              </h4>
-              <p>
+              </motion.h4>
+              <motion.p variants={textVariants}>
                 "Hummingbirds are one of the most extraordinary creatures
                 created by God. They have always been admired for their beauty
                 and charm; it's definitely a delight to witness this magnificent
@@ -64,11 +64,11 @@ const About = () => {
                 The Hummingbird Art Gallery is all about my love for hummers, my
                 vision of them and their energy illustrated using watercolors,
                 oils and acrylics."
-              </p>
+              </motion.p>
               <br />
-              <p>Beatriz</p>
+              <motion.p variants={textVariants}>Beatriz</motion.p>
             </article>
-            <section>
+            <motion.section variants={textVariants}>
               <div className={classes.social}>
                 <a
                   target="_blank"
@@ -107,8 +107,8 @@ const About = () => {
               <p className={classes.copyright}>
                 The Hummingbird Art Gallery©2020
               </p>
-            </section>
-          </motion.div>
+            </motion.section>
+          </div>
         </main>
       </Layout>
     </>

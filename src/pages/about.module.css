@@ -54,7 +54,7 @@
 }
 .social {
   width: 180px;
-  margin-bottom: 10px;
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

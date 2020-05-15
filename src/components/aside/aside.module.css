@@ -33,31 +33,21 @@
   transform: rotate(-90deg);
 }
 
-.menu li {
-  margin-left: 40px;
-  cursor: pointer;
-  color: #442c2e8e;
-  display: inline;
-  padding-bottom: 10px;
-  position: relative;
+.menu li a {
+  margin-left: 30px;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  color: #442c2e8a;
+  font-size: 14px;
 }
-.menu li:hover {
+
+.menu li a:hover {
   color: #442c2e;
 }
 
-.menu li:after {
-  border-radius: 1em;
-  border-top: 0.1em solid;
-  content: '';
-  position: absolute;
-  right: 100%;
-  bottom: 0.14em;
-  left: 0;
-  transition: right 0.4s cubic-bezier(0, 0.5, 0, 1);
-}
-
-.menu li:hover:after {
-  right: 0;
+.active {
+  color: #442c2e !important;
+  border-left: 0.5px solid;
 }
 .shops {
   text-align: center;

@@ -1,33 +1,42 @@
-import React from 'react'
+import React, { useState, useCallback } from 'react'
 import { useForm } from 'react-hook-form'
 
 import classes from './contactForm.module.css'
 
 const ContactForm = () => {
+  const [alert, setAlert] = useState(false)
   const { handleSubmit, register, errors } = useForm()
+  const sumbmitHandler = useCallback(() => {
+    if (errors) {
+      setAlert(!alert)
+    } else {
+      setAlert(false)
+    }
+  }, [errors])
   const onSubmit = values => {
     console.log(values)
   }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} netlify className={classes.form}>
+      <div className={classes.alert}>
+        {alert && <p>All filds are required!</p>}
+      </div>
       <div className={classes.inputContainer}>
         <input
           className={classes.inputName}
           placeholder="Name"
           name="name"
           ref={register({
-            required: 'Required',
-            message: 'Please provide a name',
+            required: true,
           })}
         />
-        {errors.name && errors.name.message}
 
         <input
           placeholder="E-mail Address"
           name="email"
           ref={register({
-            required: 'Required',
+            required: true,
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
               message: 'Invalid email address',
@@ -41,23 +50,19 @@ const ContactForm = () => {
         placeholder="Subject"
         name="subject"
         ref={register({
-          required: 'Required',
-          message: 'Please type a subject',
+          required: true,
         })}
       />
-      {errors.subject && errors.subject.message}
 
       <textarea
         placeholder="Message"
         name="message"
         ref={register({
-          required: 'Required',
-          message: 'Please type a message',
+          required: true,
         })}
       />
-      {errors.message && errors.message.message}
 
-      <button type="submit" disabled={!!errors}>
+      <button type="submit" onClick={sumbmitHandler}>
         Submit
       </button>
     </form>
