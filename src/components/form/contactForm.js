@@ -5,16 +5,20 @@ import classes from './contactForm.module.css'
 
 const ContactForm = () => {
   const [alert, setAlert] = useState(false)
-  const { handleSubmit, register, errors } = useForm()
-  const sumbmitHandler = useCallback(() => {
+  const { handleSubmit, register, errors, reset, clearError } = useForm()
+
+  const errorsHandler = useCallback(() => {
     if (errors) {
       setAlert(!alert)
     } else {
       setAlert(false)
     }
-  }, [errors])
+  }, [errors, alert])
+
   const onSubmit = values => {
     console.log(values)
+    reset()
+    clearError()
   }
 
   return (
@@ -39,7 +43,6 @@ const ContactForm = () => {
             required: true,
             pattern: {
               value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-              message: 'Invalid email address',
             },
           })}
         />
@@ -62,7 +65,7 @@ const ContactForm = () => {
         })}
       />
 
-      <button type="submit" onClick={sumbmitHandler}>
+      <button type="submit" onClick={errorsHandler}>
         Submit
       </button>
     </form>
