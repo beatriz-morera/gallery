@@ -1,17 +1,19 @@
 import * as React from 'react'
-import { motion } from 'framer-motion'
+import { Link } from 'gatsby'
 
 import classes from './menu-item.module.css'
 
-export default ({ title, onClose }) => {
+export default ({ title, onClose, link }) => {
   return (
-    <motion.li
-      onClick={onClose}
-      className={classes.item}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
-    >
-      <div className={classes.textPlaceholder}>{title}</div>
-    </motion.li>
+    <li onClick={onClose} className={classes.item}>
+      <Link
+        key={title}
+        to={`/${link}`}
+        style={{ textDecoration: 'none' }}
+        activeClassName={classes.active}
+      >
+        <div className={classes.textPlaceholder}>{title}</div>
+      </Link>
+    </li>
   )
 }

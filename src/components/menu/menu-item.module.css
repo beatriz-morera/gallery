@@ -12,3 +12,6 @@
   color: #442c2e;
   font-family: 'Yeseva One', cursive;
 }
+.active {
+  border-bottom: 4px solid;
+}

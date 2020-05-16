@@ -13,7 +13,7 @@ import classes from './contact.module.css'
 
 const Contact = () => {
   return (
-    <>
+    <section className={classes.section}>
       <SEO title="Contact" />
       <Menu
         links={[
@@ -33,7 +33,7 @@ const Contact = () => {
           </motion.div>
         </main>
       </Layout>
-    </>
+    </section>
   )
 }
 

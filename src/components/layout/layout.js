@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { motion } from 'framer-motion'
 
@@ -7,7 +7,11 @@ import Footer from '../footer'
 
 import classes from './layout.module.css'
 
-const layout = ({ children, contactPage = false, footer = true }) => {
+const Layout = ({ children, contactPage = false, footer = true }) => {
+  useEffect(() => {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }, [])
   return (
     <motion.div initial="exit" animate="enter">
       <Aside className={classes.aside} />
@@ -21,4 +25,4 @@ const layout = ({ children, contactPage = false, footer = true }) => {
   )
 }
 
-export default layout
+export default Layout

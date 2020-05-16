@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+.scrollTop {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 50px;
+}
+
+@media (min-width: 1024px) {
+  .scrollTop {
+    display: none;
+  }
+}

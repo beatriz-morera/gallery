@@ -37,13 +37,7 @@ export default ({ links = [], close }) => {
       <motion.div variants={variants} className={classes.container}>
         <motion.ul className={classes.list} variants={variants}>
           {links.map(([title, link]) => (
-            <Link
-              key={title}
-              to={`/${link}`}
-              style={{ textDecoration: 'none' }}
-            >
-              <MenuItem title={title} onClose={close} />
-            </Link>
+            <MenuItem key={title} title={title} onClose={close} link={link} />
           ))}
 
           <motion.div className={classes.shops} variants={variants}>
