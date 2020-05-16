@@ -13,6 +13,7 @@
   overflow: hidden;
 }
 .info {
+  padding-bottom: 10px;
   width: 100%;
   text-align: left;
 }
@@ -54,14 +55,15 @@
 }
 .social {
   width: 180px;
-  margin-top: 50px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .social img {
-  max-width: 50px;
+  max-width: 40px;
   position: relative;
+  margin-bottom: 10px;
 }
 
 @media (min-width: 450px) {
@@ -98,7 +100,6 @@
     height: 100vh;
   }
   .info {
-    padding: 20px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -110,11 +111,11 @@
     margin-left: -10%;
   }
   .info h4 {
-    margin: 0 30px 20px 30px;
-    padding: 0 20px;
+    margin: 0 30px 20px 20px;
+    padding: 0 10px;
   }
   .info p {
-    padding: 10px 50px;
+    padding: 0 30px;
   }
   .info h1 {
     margin-left: 20px;
